@@ -1,0 +1,25 @@
+1. composer create-project laravel/laravel backend
+2. npx create-react-app frontend
+3. composer require laravel/sanctum
+4. composer update 
+5. php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
+6. .env setup
+7. php artisan migrate
+use Illuminate\Support\Facades\Schema;
+
+public function boot()
+{
+    Schema::defaultStringLength(191);
+}
+8. php artisan migrate
+-delete old create_users sa migrations
+9. php artisan migrate:rollback
+10. php artisan migrate
+11. app/Http/Kernel.php 
+-> copy tanang data
+12. app/model/user 
+->copy tanang data
+13.create routes api 
+14. php artisan make:controller API/BaseController
+15.
+
