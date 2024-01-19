@@ -27,6 +27,8 @@ public function boot()
     ->npx tailwindcss init
 17. INSTALL FRAMEWORK DAISYUI 
     ->npm i -D daisyui@latest
+18. INSTALL REACT-ROUTER-DOM 
+    -npm i react-router-dom
 
 
 
