@@ -28,7 +28,12 @@ public function boot()
 17. INSTALL FRAMEWORK DAISYUI 
     ->npm i -D daisyui@latest
 18. INSTALL REACT-ROUTER-DOM 
-    -npm i react-router-dom
+    ->npm i react-router-dom
+19. INSTALL AXIOS-API
+    ->npm i axios
+20. INSTALL 
+    ->npm install react-router-dom@latest react@latest
+
 
 
 

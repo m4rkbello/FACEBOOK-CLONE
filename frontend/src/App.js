@@ -7,12 +7,15 @@ import Register from './components/Auth/Register';
 function App() {
   return (
     <div className="App">
+    
     <Router>
       <Routes>
         <Route path='/login' exact element={<Login />} />
         <Route path='/register' exact element={<Register />} />
       </Routes>
     </Router>
+  
+  
   
     </div>
   );
