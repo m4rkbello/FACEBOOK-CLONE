@@ -9,19 +9,31 @@ const Register = () => {
         c_password: ''
     });
 
+    const [isLoading, setIsLoading] = useState(false);
+
     const handleRegisterChange = (e) => {
         setUserRegister({ ...userRegister, [e.target.name]: e.target.value });
     };
 
     const handleUserRegisterSubmit = (e) => {
         e.preventDefault();
+        setIsLoading(true);
         axios.post('http://127.0.0.1:8000/api/register', userRegister)
-            .then(function (response) {
-                console.log(response);
-            })
-            .catch(function (error) {
-                console.log(error);
-            });
+        .then(function (response) {
+            console.log(response);
+
+            // Redirect the user or show a success message
+
+        })
+        .catch(function (error) {
+            console.error(error);
+
+            // Provide user-friendly error feedback
+
+        })
+        .finally(() => {
+            setIsLoading(false);
+        });
     };
 
     return (
